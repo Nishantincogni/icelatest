@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v4
         with:
-          java-version: '11'
+          java-version: '17'
           distribution: 'microsoft'
 
       - name: Build with Maven
@@ -51,4 +51,4 @@ jobs:
           app-name: 'newice'
           slot-name: 'Production'
           package: '*.war'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C08754974DE44FFAAE7146F9581FDDC3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_20B6A8D1EB9C46019846633936CD2907 }}
